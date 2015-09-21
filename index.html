@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Countdown</title>
+<!--Jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!--Jquery Countdown-->
+<script src="bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
+<!--Normalize-->
+<link rel="" href="bower_components/normalize.css/normalize.css">
+<!--Style-->
+<link rel="stylesheet" href="css/style.css">
+<!--Animate-->
+<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+<!--Font-Josefin-->
+<link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<header></header>
+
+<h1 class="animated pulse infinite">Coming Soon....</h1>
+
+<h2>Already tired of 2015? No worries, 2016 is on the way!</h2>
+
+<div id="getting-started" class="container"></div>
+
+
+<footer><span>by Jose Gomez</span></footer>
+
+<script type="text/javascript">
+$("#getting-started")
+.countdown("2016/01/01", function(event) {
+$(this).text(
+event.strftime('%D days %H:%M:%S')
+);
+});
+</script>
+
+</body>
+</html>
